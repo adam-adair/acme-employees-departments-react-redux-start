@@ -2,7 +2,7 @@ import React from 'react';
 import Employees from './Employees';
 import {connect} from 'react-redux'
 
-const Department = ({ department, employees, destroyEmployee, removeFromDepartment })=> {
+const Department = ({ department, employees })=> {
     return (
       <li>
         <span className='department-title'>
@@ -12,9 +12,6 @@ const Department = ({ department, employees, destroyEmployee, removeFromDepartme
         </span>
         <Employees
           department={ department }
-          // employees ={ employees }
-          destroyEmployee = { destroyEmployee }
-          removeFromDepartment={ removeFromDepartment }
         />
       </li>
     );
